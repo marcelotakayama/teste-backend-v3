@@ -79,7 +79,6 @@ namespace TheatricalPlayersRefactoringKata.Domain.Formatters
 
         protected int CalculateAmount(Play play, Performance perf)
         {
-            // Implementação do cálculo ou pode receber via injeção de dependência
             var calculator = new StatementCalculator();
             return calculator.CalculateAmount(play, perf);
         }
