@@ -4,4 +4,21 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Application\**" />
+    <Compile Remove="Presentation\**" />
+    <EmbeddedResource Remove="Application\**" />
+    <EmbeddedResource Remove="Presentation\**" />
+    <None Remove="Application\**" />
+    <None Remove="Presentation\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Invoice.cs" />
+    <Compile Remove="Performance.cs" />
+    <Compile Remove="PerformanceData.cs" />
+    <Compile Remove="Play.cs" />
+    <Compile Remove="StatementPrinter.cs" />
+  </ItemGroup>
+
 </Project>
