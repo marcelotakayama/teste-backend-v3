@@ -1,0 +1,33 @@
+Desafio Técnico Aiko – Refatoração e Testes
+
+
+Requisitos:
+
+- Adição do gênero histórico ao repertório
+- Geração do extrato por XML
+
+----------------------------------------------------------------------------------------------
+
+1. Refatoração e Organização do Código (DDD)
+
+- Entidades separadas para maior clareza e organização
+- Criação de Enums para representar os diferentes tipos de peças
+- Definição de contratos via interfaces
+- Divisão dos serviços conforme suas responsabilidades específicas:
+
+* Calculator: Responsável pelos cálculos de créditos e quantidade de peças, 
+	     garantindo que cada tipo siga suas regras de negócio
+
+* Formatter: Cuida da formatação das saídas (texto, XML e câmbio)
+
+* Printer: Gerencia a impressão dos resultados em texto e XML
+
+----------------------------------------------------------------------------------------------
+
+2. Implementação de Testes
+
+- Testes exclusivos para Calculator – Verificando cálculos de créditos e quantidades
+- Testes exclusivos para Formatter – Validando a correta formatação das saídas
+- Ajustes nos testes existentes para Printer – Melhorando a cobertura e a precisão dos testes
+
+----------------------------------------------------------------------------------------------

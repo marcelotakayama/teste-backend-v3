@@ -20,7 +20,7 @@ namespace TheatricalPlayersRefactoringKata.Tests
 
             var result = _calculator.CalculateAmount(play, performance);
 
-            Assert.Equal(39500, result); 
+            Assert.Equal(39500, result); // 3950 * 10
         }
 
         [Fact]

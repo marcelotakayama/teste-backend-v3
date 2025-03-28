@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
 
 using TheatricalPlayersRefactoringKata.Domain.Entities;
 using TheatricalPlayersRefactoringKata.Domain.Enums;
+using TheatricalPlayersRefactoringKata.Domain.Interfaces;
 
 namespace TheatricalPlayersRefactoringKata.Domain.Services
 {
-    public class StatementCalculator
+    public class StatementCalculator : IStatementCalculator
     {
         public int CalculateAmount(Play play, Performance perf)
         {

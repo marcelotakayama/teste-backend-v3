@@ -15,7 +15,8 @@ namespace TheatricalPlayersRefactoringKata.Domain.Entities
         {
             Id = id;
             Name = name;
-            Lines = Math.Clamp(lines, 1000, 4000); // Força o lines a ficar entre 1000 e 4000 (Obrigatório)
+            // Força o lines a ficar entre 1000 e 4000 (Obrigatório)
+            Lines = Math.Clamp(lines, 1000, 4000); 
             Type = type;
         }
     }
